@@ -5,7 +5,7 @@ import {FourDService, LeafletHelper} from '4d-mapper';
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.css']
+  styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
 
