@@ -5,16 +5,18 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { TableComponent } from './table/table.component';
 import { APIInterceptor } from './api/api.service';
-
+import { MatTableModule } from '@angular/material/table'
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    TableComponent
+    TableComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
+
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
