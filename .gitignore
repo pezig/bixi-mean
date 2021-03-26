@@ -13,6 +13,12 @@ node_modules
 chrome-profiler-events*.json
 speed-measure-plugin*.json
 
+#data
+stations/
+
+#express views
+server/views/
+
 # IDEs and editors
 /.idea
 .project
