@@ -9,16 +9,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* GET home page. */
-router.get('/status', function(req, res, next) {
-  try {
-  return res.send('Up and running');
-  } catch (err) {
-    return res.status(400).json({ error: err.message });
-  }
-});
 
-/* GET home page. */
+/* GET stations. */
 router.get('/stations', function(req, res, next) {
   try {
     let results = [];
