@@ -6,6 +6,10 @@ import { MapComponent } from './map/map.component';
 import { TableComponent } from './table/table.component';
 import { APIInterceptor } from './api/api.service';
 import { MatTableModule } from '@angular/material/table'
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatSortModule } from '@angular/material/sort';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,8 +19,10 @@ import { MatTableModule } from '@angular/material/table'
   imports: [
     BrowserModule,
     HttpClientModule,
-    MatTableModule
-
+    MatTableModule,
+    NgbNavModule,
+    MatSortModule,
+    BrowserAnimationsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
