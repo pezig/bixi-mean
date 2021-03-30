@@ -1,5 +1,11 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, ApplicationRef, Component, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  ApplicationRef,
+  Component,
+  Input,
+  OnInit,
+} from '@angular/core';
 import L from 'leaflet';
 import { FourDService, LeafletHelper } from '4d-mapper';
 @Component({
@@ -35,9 +41,6 @@ export class MapComponent implements OnInit {
       attribution: 'HOT',
     }).addTo(this.leafMap);
   }
-
-
-  
 }
 
 export type Station = {

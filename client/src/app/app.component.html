@@ -1,16 +1,16 @@
-<ul ngbNav #nav="ngbNav" class="nav-tabs">
-  <li [ngbNavItem]="1">
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container [ngbNavItem]="1">
     <a ngbNavLink>Map</a>
     <ng-template ngbNavContent>
       <app-map></app-map>
     </ng-template>
-  </li>
-  <li [ngbNavItem]="2">
+  </ng-container>
+  <ng-container [ngbNavItem]="2">
     <a ngbNavLink>Table</a>
     <ng-template ngbNavContent>
       <app-table></app-table>
     </ng-template>
-  </li>
-</ul>
+  </ng-container>
+</nav>
 
 <div [ngbNavOutlet]="nav" class="mt-2"></div>
