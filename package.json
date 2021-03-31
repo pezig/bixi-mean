@@ -8,7 +8,7 @@
     "start-server": "nodemon server/bin/www",
     "build": "cd ./client && ng build",
     "test": "cd ./client && ng test",
-    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
+    "lint": "cd ./client && tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
     "pretty": "prettier . --write",
     "e2e": "cd ./client && ng e2e"
   },

@@ -14,11 +14,13 @@ import { FourDService, LeafletHelper } from '4d-mapper';
   styleUrls: ['./map.component.scss'],
 })
 export class MapComponent implements OnInit {
-  constructor(private httpClient: HttpClient) {}
-
   private stationData: Array<Station> = [];
   private leafMap: L;
   private leafletHelper: LeafletHelper;
+
+  constructor(private httpClient: HttpClient) {}
+
+
 
   ngOnInit(): void {
     this.initLeaflet();
@@ -44,6 +46,7 @@ export class MapComponent implements OnInit {
 }
 
 export type Station = {
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   Code: string;
   name: string;
   latitude: string;
