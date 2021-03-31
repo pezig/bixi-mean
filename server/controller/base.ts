@@ -1,7 +1,7 @@
 // abstract class BaseCtrl {
 
 //     abstract model: any;
-  
+
 //     // Get all
 //     getAll = async (req, res) => {
 //       try {
@@ -11,7 +11,7 @@
 //         return res.status(400).json({ error: err.message });
 //       }
 //     }
-  
+
 //     // Count all
 //     count = async (req, res) => {
 //       try {
@@ -21,7 +21,7 @@
 //         return res.status(400).json({ error: err.message });
 //       }
 //     }
-  
+
 //     // Insert
 //     insert = async (req, res) => {
 //       try {
@@ -31,7 +31,7 @@
 //         return res.status(400).json({ error: err.message });
 //       }
 //     }
-  
+
 //     // Get by id
 //     get = async (req, res) => {
 //       try {
@@ -41,7 +41,7 @@
 //         return res.status(500).json({ error: err.message });
 //       }
 //     }
-  
+
 //     // Update by id
 //     update = async (req, res) => {
 //       try {
@@ -51,7 +51,7 @@
 //         return res.status(400).json({ error: err.message });
 //       }
 //     }
-  
+
 //     // Delete by id
 //     delete = async (req, res) => {
 //       try {
@@ -62,5 +62,5 @@
 //       }
 //     }
 //   }
-  
+
 //   export default BaseCtrl;
