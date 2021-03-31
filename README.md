@@ -2,10 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
-## Front End
+## Setup
 
-Navigate to the client folder and run `npm i`. After it finishes, run `npm run start`
+Run `npm i`
+## Start client and server
 
-## Back End
-
-Navigate to the server folder and run `npm i`. After it finishes, run `npm run start`
+Run `npm run start-client` and `npm run start-server`
