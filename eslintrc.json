@@ -8,12 +8,5 @@
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
-  },
-  "rules": {
-    "no-console": 0,
-    "prettier/prettier": "error",
-    "array-bracket-spacing": true,
-    "block-spacing": true,
-    "semi": "always"
   }
 }

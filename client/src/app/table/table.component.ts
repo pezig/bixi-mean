@@ -11,11 +11,12 @@ import { MatSort, Sort } from '@angular/material/sort';
 })
 export class TableComponent implements OnInit {
   @ViewChild(MatSort) sort: MatSort;
-  constructor(private httpClient: HttpClient) {}
+  displayedColumns: string[] = ['code', 'name', 'latitude', 'longitude'];
+  dataSource = new MatTableDataSource<Station>();
 
   private stationData: Array<Station> = [];
-  dataSource = new MatTableDataSource<Station>();
-  displayedColumns: string[] = ['code', 'name', 'latitude', 'longitude'];
+
+  constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {
     this.httpClient.get('stations').subscribe((data: Station[]) => {

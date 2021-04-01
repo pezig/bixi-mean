@@ -17,6 +17,7 @@ speed-measure-plugin*.json
 
 #data
 server/stations/OD*
+server-ts/stations/OD*
 
 #express views
 server/views/
