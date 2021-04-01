@@ -16,7 +16,7 @@ chrome-profiler-events*.json
 speed-measure-plugin*.json
 
 #data
-stations/
+server/stations/OD*
 
 #express views
 server/views/
