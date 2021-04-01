@@ -16,7 +16,6 @@ router.get("/stations", function (req, res, next) {
       .pipe(csv())
       .on("data", (data) => results.push(data))
       .on("end", () => {
-        console.log(results);
         res.send(results);
       });
   } catch (err) {
